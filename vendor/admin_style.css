@@ -3555,14 +3555,14 @@ iframe{
 .fa-green{
 	color:green!important;
 }
-.x-form-text {
-	border-width: 0px 0px 1px 0px!important;
-	background-image: none!important;
-	background: transparent!important;
-}
-.i-select .x-form-text {
-	border-width: 0px 1px 1px 0px!important;
-}
+/* .x-form-text { */
+	/* border-width: 0px 0px 1px 0px!important; */
+	/* background-image: none!important; */
+	/* background: transparent!important; */
+/* } */
+/* .i-select .x-form-text { */
+	/* border-width: 0px 1px 1px 0px!important; */
+/* } */
 
 .x-btn-group .x-form-text, .x-form-text:read-only{
 	border-width: 0px!important;
