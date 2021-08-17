@@ -1,0 +1,11 @@
+body
+{
+  font-family: Verdana;
+  font-size: 12px;
+  background-color: #F9F0AB;
+}
+header,footer{
+	border: 1px dotted black;
+	text-align:center;
+	font-weight:bold;
+}

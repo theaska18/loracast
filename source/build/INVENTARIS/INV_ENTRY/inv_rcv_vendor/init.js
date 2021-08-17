@@ -1,0 +1,26 @@
+shortcut.set({
+	code:'main',
+	list:[
+		{
+			key:'f5',
+			fn:function(){
+				Ext.getCmp('INV_RCV_VENDOR.list').refresh();
+			}
+		},{
+			key:'ctrl+f',
+			fn:function(){
+				Ext.getCmp('INV_RCV_VENDOR.text').focus();
+			}
+		},{
+			key:'ctrl+shift+f',
+			fn:function(){
+				_click('INV_RCV_VENDOR.btnShowSearch');
+			}
+		},{
+			key:'f6',
+			fn:function(){
+				_click('INV_RCV_VENDOR.btnAdd');
+			}
+		}
+	]
+});

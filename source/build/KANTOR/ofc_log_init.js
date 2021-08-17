@@ -1,0 +1,1 @@
+// Ext.getCmp('OFC_LOG.search.f3').setValue({employee_id:_employee_id,name:_user_name});

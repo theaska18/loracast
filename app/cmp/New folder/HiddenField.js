@@ -1,0 +1,1 @@
+Ext.define('App.cmp.HiddenField',{extend:'Ext.form.Hidden',property:{type:'hidden'}});

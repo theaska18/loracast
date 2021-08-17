@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="http://localhost/loracast/vendor/images/icon_32.ico">
+			<title>Login  | SiApp.net</title>
+		<meta name="viewport" content='width=device-width, initial-scale=1'>
+	<style>
+		#load{
+			width:100%;
+			height:100%;
+			top:0;
+			left:0;
+			position:fixed;
+			z-index:9999;
+			opacity: 0.5;
+			background:white;
+		}
+		#loadImage{
+			position: absolute;
+			left: 50%;top: 50%;
+			margin-left: -50px;
+			margin-top: -50px;
+		}
+		body{
+			margin:0px;
+		}
+	</style>
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+				navigator.serviceWorker.register(url+'sw.js').then(function(registration) {}).catch(function(err) {});
+			});
+		}
+		document.onreadystatechange = function (a) {
+		  var state = document.readyState;
+		  if (state == 'interactive') {
+		  } else if (state == 'complete') {
+			  storage_auth();
+			  // _local_storage=_get_session(session_name);
+			  // console.log(_local_storage);
+			  $('#load').fadeOut('slow');
+				var imp=_import_list;
+				_import_list=[];
+				importComponent(imp,function(){
+					start_up();
+				});
+				
+		  }
+		};
+		var _mobile=false,_single=false;
+			</script>
+</head>
+<body>
+	<div id="load"><img id="loadImage" src="http://localhost/loracast/vendor/images/Blocks-1s-100px.gif"/></div>
+<link href="http://localhost/loracast/vendor/web-font/css/font-awesome.min.css?v=1512647044" rel="stylesheet" type="text/css" />	<script>
+		if(window.innerWidth<600){
+			_mobile=true;
+		}
+	</script>
+<link href="http://localhost/loracast/vendor/ext-4.2.1.883/resources/css/ext-all.min.css?v=1496930956" rel="stylesheet" type="text/css" />
+<link href="http://localhost/loracast/vendor/admin_style.min.css?v=1599871129" rel="stylesheet" type="text/css" />	<div id='i-window-menu-other-cursor'>
+		<div class="i-window-menu-other-cursor"></div>
+		<div class="i-window-menu-other-cursor2"></div>
+	</div>
+	<img id='tmp-initial' style='display:none;'>
+	<script>
+		var _lang={'main':JSON.parse('[]')},
+			_local_storage=null,
+			_lang='en',
+			_param='',
+			_lang_browser=window.navigator.language,
+			_app_name='SiKamal CMS',
+			_import_list=[],
+			_app_powered='Asep Kamaludin &#9400; 2013',
+			_cache='Y',
+			_clear_storage='N',
+			_employee_id=22,
+			_menu_list=[{"iconCls":"fa fa-cog","text":"Web Setting","master_flag":"0","script":"if(_access('WEB_SETTING_hide_tab_header')==false){_show_tab_header=false;}\nif(_access('WEB_SETTING_hide_menu_top')==false){_show_menu_top=false;}\nif(_access('WEB_SETTING_hide_menu_left')==false){_show_menu_left=false;}\nif(_access('WEB_SETTING_hide_home')==false){_show_home=false;}\nhide=true;","load":"","code":"WEB_SETTING","cls":"i-menu-list","update":"1586797176","leaf":true},{"iconCls":"fa fa-lock","text":"Login","master_flag":"1","script":"autoTab=true;","load":"","code":"LOGIN","update":"1586803594","leaf":true}],
+			_access_list=[{"acces_type":"ACCESSTYPE_CODE","access_code":"WEB_SETTING_hide_home","access_name":"[Web] Hide Home"}],
+			_setting=[],
+			_tab_list=[],
+			session_name='APP_FRAMEWORK',
+			_tenant_id=4,
+			_tenant_name='SiApp.net',
+			_tenant_address='Bandung, Kota Bandung',
+			_tenant_contact='<span class="fa fa-phone"></span> +628557000963 <span class="fa fa-fax"></span> -',
+			_tenant_logo='18000002_4.jpg',
+			url='http://localhost/loracast/',
+			_user_id=20,
+			_user_name='Login ',
+			_user_code='login',
+			_single_page=false,
+			_menu_code=null,
+			_session_id='login',
+			_var={},
+			_jum_menu_active_top=0,
+			_show_menu_top=true,
+			_show_menu_left=true,
+			_show_home=true,
+			_menu_list_obj={},
+			_show_tab_header=true,
+			autoLoad=null;
+	</script>
+	<script src="http://localhost/loracast/vendor/ext-4.2.1.883/ext-all.min.js"></script>
+<script src="http://localhost/loracast/vendor/jquery-2.1.4.min.js"></script>
+<script src="http://localhost/loracast/app/system/Common.min.js?v=1592919946"></script>
+<script src="http://localhost/loracast/vendor/main.min.js?v=1592963597"></script>
+<script src="http://localhost/loracast/app.min.js?v=1586894404"></script></body>
+</html>

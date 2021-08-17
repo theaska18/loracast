@@ -1,0 +1,1 @@
+Ext.getCmp('INV_REPORT_A_4.panel').qSetForm();

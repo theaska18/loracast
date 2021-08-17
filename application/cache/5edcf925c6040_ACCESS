@@ -1,0 +1,1 @@
+a:3:{s:4:"time";i:1591540005;s:3:"ttl";i:3600;s:4:"data";s:308:"{"access_list":[{"acces_type":"ACCESSTYPE_CODE","access_code":"WEB_SETTING_hide_home","access_name":"[Web] Hide Home"}],"role_list":[{"code":"WEB_SETTING","update":"1586797176"},{"code":"LOGIN","update":"1587001637"}],"folder_list":{"WEB_SETTING":"source\/build\/web_setting","LOGIN":"source\/build\/login"}}";}
